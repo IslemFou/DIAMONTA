@@ -1,0 +1,26 @@
+:root {
+  --diamonta-blue: #190c3b;
+  --diamonta-pink: #e7a4a4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto serif", "serif";
+  background-color: var(--diamonta-blue);
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Prata", "serif";
+}
