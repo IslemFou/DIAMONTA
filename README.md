@@ -1,1 +1,1 @@
-# DIAMONTA-Co.
+# DIAMONTA e-commerce website
