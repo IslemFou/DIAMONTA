@@ -24,3 +24,7 @@ h5,
 h6 {
   font-family: "Prata", "serif";
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
