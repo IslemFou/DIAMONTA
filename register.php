@@ -35,7 +35,7 @@ if (!empty($_POST)) {
     }
 
     // Regular expression for the password & password checking
-    $regexPass = "/^(?=.*[a-z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/";
+    $regexPass = "/^(?=.*[a-z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/"; // au moins 8 caracteres, avec une majuscule, un chiffre et un symbole
     if (!isset($_POST['password']) || !preg_match($regexPass, $_POST['password'])) {
       $info .= message("Le mot de passe est invalide", "danger");
     }
