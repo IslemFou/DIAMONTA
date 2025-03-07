@@ -1,10 +1,6 @@
 <?php
 require_once 'inc/functions.inc.php';
 
-// if (isset($_SESSION['user'])) {
-//   redirect('profile.php');
-// }
-
 $info = '';
 
 if (!empty($_POST)) {
