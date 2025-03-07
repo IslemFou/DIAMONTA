@@ -94,7 +94,7 @@
     </ul>
 
     <div class="col-md-auto text-end">
-      <button type="button" class="btn btn-outline-primary me-2">Connexion</button>
+      <button type="button" class="btn btn-outline-primary me-2"><a href="<?= BASE_URL; ?>connexion.php">Connexion</a></button>
       <button type="button" class="btn btn-primary">Inscription</button>
     </div>
   </header>
