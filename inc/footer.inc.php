@@ -1,16 +1,17 @@
 <?php require_once 'inc/functions.inc.php'; ?>
 
-<footer class="py-3 my-4 position-absolute bottom-0 start-0 end-0">
+</main>
+<footer class="d-flex flex-column justify-content-center align-itms-center text-white">
   <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-    <li><a href="#" class="nav-link px-2 link-secondary">Accueil</a></li>
-    <li><a href="#" class="nav-link px-2 link-secondary">Haute Joaillerie</a></li>
-    <li><a href="#" class="nav-link px-2 link-secondary">Joaillerie</a></li>
-    <li><a href="#" class="nav-link px-2 link-secondary">Mariages & Célébrations</a></li>
-    <li><a href="#" class="nav-link px-2 link-secondary">Horlogerie</a></li>
-    <li><a href="#" class="nav-link px-2 link-secondary">Savoir-Faire</a></li>
-    <li><a href="#" class="nav-link px-2 link-secondary">Services</a></li>
+    <li><a href="#" class="nav-link px-2 link-light">Accueil</a></li>
+    <li><a href="#" class="nav-link px-2 link-light">Haute Joaillerie</a></li>
+    <li><a href="#" class="nav-link px-2 link-light">Joaillerie</a></li>
+    <li><a href="#" class="nav-link px-2 link-light">Mariages & Célébrations</a></li>
+    <li><a href="#" class="nav-link px-2 link-light">Horlogerie</a></li>
+    <li><a href="#" class="nav-link px-2 link-light">Savoir-Faire</a></li>
+    <li><a href="#" class="nav-link px-2 link-light">Services</a></li>
   </ul>
-  <p class="text-center text-body-secondary">©2025 Diamonta</p>
+  <p class="text-center text-white">©2025 Diamonta</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

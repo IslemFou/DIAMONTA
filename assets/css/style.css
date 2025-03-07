@@ -28,3 +28,36 @@ h6 {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.btn-diamonta {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-width: 1px;
+  border-radius: 0.375rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.btn-diamonta-pink {
+  background-color: var(--diamonta-pink);
+  color: #111;
+}
+.btn-diamonta-blue {
+  background-color: var(--diamonta-blue);
+  color: #eee;
+}
+
+main {
+  /* padding: 10rem 4rem; */
+  min-height: 770px;
+}
+
+#eye {
+  position: absolute !important;
+  top: 50% !important;
+  left: 95% !important;
+  transform: translate(-50%, -50%) !important;
+}

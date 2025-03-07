@@ -11,6 +11,7 @@ const servicesLink = document.querySelector("#servicesDropdownMenuLink");
 const dropdownMenu = document.querySelector(".dropdown-menu");
 
 function displayDropdownItem() {
+  let dropdownLink = "";
   switch (dropdownLink) {
     case dropdownLink == highJewelryLink:
       dropdownMenu.innerHTML = `
@@ -60,3 +61,19 @@ function displayDropdownItem() {
 }
 
 document.addEventListener("hover", displayDropdownItem());
+
+// Show/hide password in forms
+const eyeIcon = document.querySelector("#eye");
+
+function showHidePass() {
+  let x = document.querySelector("#password");
+  if (x.type === "password") {
+    x.type = "text";
+    eyeIcon.classList.add("bi-eye-slash-fill");
+    eyeIcon.classList.remove("bi-eye-fill");
+  } else {
+    x.type = "password";
+    eyeIcon.classList.add("bi-eye-fill");
+    eyeIcon.classList.remove("bi-eye-slash-fill");
+  }
+}
