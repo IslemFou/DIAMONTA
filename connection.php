@@ -46,7 +46,7 @@ if (empty($_POST)) {
     rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="<?= BASE_URL; ?>assets/css/style.css">
-  <title>Se connecter à DIAMONTA</title>
+  <title><?= $title; ?></title>
 </head>
 
 <body class="py-4 bg-diamonta-blue h-100">
