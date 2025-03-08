@@ -7,7 +7,7 @@ function message(string $text, string $class): string
   return
     '<div class="w-50 mx-auto d-flex align-items-center alert alert-' . $class . '">' .
     '<span class="mx-auto">' . $text . '</span>' .
-    '<button type="button" class="btn-close align-self-center position absolute top-50% end-0" data-bs-dismiss="alert"></button>' .
+    '<button type="button" class="btn-close align-self-center position-absolute top-50% end-0" data-bs-dismiss="alert"></button>' .
     '</div>';
 }
 

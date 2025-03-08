@@ -22,14 +22,22 @@
 
 <body>
   <main>
+    <div
+      class="bg-diamonta-pink d-flex justify-content-center align-items-center position-relative alert rounded-0 p-3">
+      <p class="text-diamonta-blue text-uppercase text-center m-0">Réalisez vos achats sur notre
+        e-boutique et
+        bénéficiez de la livraison express offerte</p>
+      <button type="button" class="btn-close position-absolute top-50 end-0 translate-middle" data-bs-dismiss="alert"
+        aria-label="Close"></button>
+    </div>
     <header
-      class=" container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-around py-3 mb-4 border-bottom">
+      class=" container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-around py-3 mb-4 border-bottom border-diamonta-pink">
       <div class="col-md-auto mb-2 mb-md-0">
         <a href="<?= BASE_URL; ?>index.php" class="h4 text-uppercase text-decoration-none">Diamonta</a>
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-light active">Accueil</a></li>
+        <li><a href="<?= BASE_URL; ?>index.php" class="nav-link px-2 link-light active">Accueil</a></li>
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle px-2 link-light" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" id="highJewelryDropdownMenuLink">
@@ -96,7 +104,7 @@
       </ul>
 
       <div class="col-md-auto text-end">
-        <a href="<?= BASE_URL; ?>login.php" type="button"
+        <a href="<?= BASE_URL; ?>connection.php" type="button"
           class="btn btn-outline btn-diamonta btn-diamonta-pink me-2">Connexion</a>
         <a href="<?= BASE_URL; ?>register.php" type="button" class="btn btn-diamonta btn-diamonta-pink">Inscription</a>
       </div>
