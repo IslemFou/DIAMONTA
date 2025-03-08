@@ -10,8 +10,8 @@ require_once 'inc/header.inc.php';
       <a href="#" class="text-diamonta-pink p-1 text-decoration-none border-bottom border-light">Découvrir</a>
     </div>
     <div class="col-md-6">
-      <video src="<?= BASE_URL; ?>assets/media/video/jewelry_store_video.mov" height="600px" width="800px" autoplay loop
-        muted class="img-fluid"></video></video>
+      <video src="<?= BASE_URL; ?>assets/media/video/jewelry_store.mp4" height="600px" width="800px" autoplay loop muted
+        class="img-fluid"></video></video>
     </div>
   </div>
 </div>
