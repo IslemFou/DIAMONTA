@@ -135,11 +135,17 @@ main {
   min-height: 770px;
 }
 
-#eye {
+#eyeFill {
   position: absolute !important;
   top: 50% !important;
   left: 95% !important;
   transform: translate(-50%, -50%) !important;
+}
+
+#eye {
+  position: absolute !important;
+  top: 55% !important;
+  left: 90% !important;
 }
 
 .carousel-indicators {

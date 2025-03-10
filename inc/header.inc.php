@@ -20,7 +20,7 @@
   <title>Diamonta</title>
 </head>
 
-<body data-bs-theme="dark">
+<body>
   <main>
     <div
       class=" bg-diamonta-pink d-flex justify-content-center align-items-center position-relative alert rounded-0 p-3">
@@ -31,7 +31,8 @@
         aria-label="Close"></button>
     </div>
     <header
-      class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-around py-3 mb-4 border-bottom border-diamonta-pink">
+      class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-around py-3 mb-4 border-bottom border-diamonta-pink"
+      data-bs-theme="dark">
       <div class="col-md-auto mb-2 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center">
         <a href="<?= BASE_URL; ?>index.php" class="h5 text-uppercase text-decoration-none" id="logo">Diamonta & Co.</a>
       </div>

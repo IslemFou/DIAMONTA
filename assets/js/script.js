@@ -63,17 +63,30 @@ function displayDropdownItem() {
 document.addEventListener("hover", displayDropdownItem());
 
 // Show/hide password in forms
+const eyeIconFill = document.querySelector("#eyeFill");
 const eyeIcon = document.querySelector("#eye");
 
 function showHidePass() {
   let x = document.querySelector("#password");
   if (x.type === "password") {
     x.type = "text";
-    eyeIcon.classList.add("bi-eye-slash-fill");
-    eyeIcon.classList.remove("bi-eye-fill");
+    if (eyeIconFill) {
+      eyeIconFill.classList.add("bi-eye-slash-fill");
+      eyeIconFill.classList.remove("bi-eye-fill");
+    }
+    if (eyeIcon) {
+      eyeIcon.classList.add("bi-eye-slash");
+      eyeIcon.classList.remove("bi-eye");
+    }
   } else {
     x.type = "password";
-    eyeIcon.classList.add("bi-eye-fill");
-    eyeIcon.classList.remove("bi-eye-slash-fill");
+    if (eyeIconFill) {
+      eyeIconFill.classList.add("bi-eye-fill");
+      eyeIconFill.classList.remove("bi-eye-slash-fill");
+    }
+    if (eyeIcon) {
+      eyeIcon.classList.add("bi-eye");
+      eyeIcon.classList.remove("bi-eye-slash");
+    }
   }
 }

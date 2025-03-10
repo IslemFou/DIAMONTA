@@ -59,9 +59,10 @@ if (empty($_POST)) {
         <label for="email" class="form-label">Adresse e-mail</label>
         <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
       </div>
-      <div class="mb-3">
-        <label for="passwowrd" class="form-label"">Mot de passe</label>
-        <input type=" password" class="form-control" id="password" placeholder="Password">
+      <div class="mb-3 position-relative">
+        <label for="passwowrd" class="form-label">Mot de passe</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+        <i class="bi bi-eye" id="eye" onclick="showHidePass()"></i>
       </div>
 
       <div class="row">
@@ -79,6 +80,7 @@ if (empty($_POST)) {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+  <script src="<?= BASE_URL; ?>assets/js/script.js"></script>
 </body>
 
 </html>
