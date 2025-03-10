@@ -49,10 +49,11 @@ if (empty($_POST)) {
   <title><?= $title; ?></title>
 </head>
 
-<body class="py-4 bg-diamonta-blue h-100">
-  <main class="d-flex flex-column justify-content-center align-items-center form-signin w-50 mx-auto h-100">
-    <form action="" method="post" class="bg-body-secondary p-5 rounded-3 text-dark col-md-6">
-      <h1 class="h3 mb-3 fw-normal text-center ">Connectez-vous</h1>
+<body class="py-4 bg-diamonta-blue h-100" data-bs-theme="dark">
+  <main class="d-flex flex-column justify-content-center align-items-center form-signin mx-auto h-100 w-75">
+    <form action="" method="post"
+      class="bg-diamonta-blue text-diamonta-pink p-5 rounded-3 text-dark col-5 border border-light border-2">
+      <h1 class="h3 mb-3 fw-normal text-center">Connectez-vous</h1>
 
       <div class="mb-3">
         <label for="email" class="form-label">Adresse e-mail</label>

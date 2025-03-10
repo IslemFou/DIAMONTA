@@ -5,11 +5,11 @@ require_once 'inc/header.inc.php';
 
 <div class="text-center bg-diamonta-blue mb-5">
   <div class="container-fluid d-flex justify-content-around align-items-center py-5">
-    <div class="d-flex flex-column col-md-6 justify-content-center align-items-center">
+    <div class="d-flex flex-column col-md-5 justify-content-center align-items-center">
       <h2 class="h2 text-light text-capitalize mb-3 lh-base w-50">Avec tout notre amour, depuis 1837</h2>
       <a href="#" class="text-diamonta-pink p-1 text-decoration-none border-bottom border-light">Découvrir</a>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-7">
       <video src="<?= BASE_URL; ?>assets/media/video/jewelry_store.mp4" height="600px" width="800px" autoplay loop muted
         class="img-fluid"></video></video>
     </div>
