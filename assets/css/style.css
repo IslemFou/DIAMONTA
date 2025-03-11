@@ -11,22 +11,23 @@
 }
 
 body {
-  font-family: "Noto serif", "serif";
+  font-family: "Quicksand", "sans-serif";
   background-color: var(--diamonta-blue);
   color: #fff;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family: "Prata", "serif";
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+#rdv:hover {
+  color: var(--diamonta-blue);
+  border-color: var(--diamonta-pink);
+  background-color: var(--diamonta-pink) !important;
 }
 
 .btn-diamonta {
@@ -101,12 +102,8 @@ h6 {
   color: var(--diamonta-blue) !important;
 }
 
-.link-diamonta-pink:hover {
-  color: #eee !important;
-}
-
-.link-diamonta-blue:hover {
-  color: #eee !important;
+.link-light:hover {
+  color: var(--diamonta-pink) !important;
 }
 
 .btn-diamonta-pink:hover {
@@ -159,4 +156,10 @@ main {
 #discover img {
   height: 600px !important;
   width: auto !important;
+}
+
+header:hover {
+  ul.nav {
+    display: flex !important;
+  }
 }

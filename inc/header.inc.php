@@ -12,8 +12,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Prata&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Prata&display=swap"
     rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="<?= BASE_URL; ?>assets/css/style.css">
@@ -30,17 +29,40 @@
       <button type="button" class="btn-close position-absolute top-50 end-0 translate-middle" data-bs-dismiss="alert"
         aria-label="Close"></button>
     </div>
-    <header
-      class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-around py-3 mb-4 border-bottom border-diamonta-pink"
+    <header class="container-fluid d-flex flex-column py-3 mb-4 border-bottom border-diamonta-pink"
       data-bs-theme="dark">
-      <div class="col-md-auto mb-2 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center">
-        <a href="<?= BASE_URL; ?>index.php" class="h5 text-uppercase text-decoration-none" id="logo">Diamonta & Co.</a>
+      <div class="row w-100 d-flex justify-content-center align-items-center">
+        <!-- Logo -->
+        <div class="col-10 d-flex justify-content-center ">
+          <a href="<?= BASE_URL; ?>index.php" class="h1 text-uppercase text-decoration-none" id="logo">Diamonta</a>
+        </div>
+        <!-- Cart and Person Icon -->
+        <div class="col-2 d-flex justify-content-end align-items-center gap-2">
+          <a href="#" type="button" class="btn btn-light px-2 rounded-0" id="rdv">Prendre RDV</a>
+          <a href="<?= BASE_URL; ?>store/cart.php" class="nav-link px-2 link-light">
+            <i class="bi bi-bag-heart-fill fill-diamonta-pink fs-3"></i>
+          </a>
+
+          <?php if (isset($_GET['action']) && $_GET['action'] === 'logout') {
+            session_destroy();
+            redirect('index.php');
+          }
+
+          if (isset($_SESSION['user'])): ?>
+            <a href="?action=logout" class="nav-link px-2 link-light">
+              <button type="button" class="btn btn-diamonta-pink">Déconnexion</button>
+            </a>
+          <?php else: ?>
+            <a href="<?= BASE_URL; ?>login.php" type="button" class="nav-link link-light"><i
+                class="bi bi-person fill-diamonta-pink fs-2"></i></a>
+          <?php endif; ?>
+        </div>
       </div>
 
-      <ul class="d-sm-none d-xl-flex nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="<?= BASE_URL; ?>index.php" class="nav-link px-2 link-diamonta-pink active">Accueil</a></li>
+      <ul class="d-none nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="<?= BASE_URL; ?>index.php" class="nav-link px-2 link-light active">Accueil</a></li>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle px-2 link-diamonta-pink" role="button" data-toggle="dropdown"
+          <a href="#" class="nav-link dropdown-toggle link-light" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" id="highJewelryDropdownMenuLink">
             Haute Joaillerie
           </a>
@@ -50,7 +72,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle px-2 link-diamonta-pink" role="button" data-toggle="dropdown"
+          <a href="#" class="nav-link dropdown-toggle px-2 link-light" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" id="jewelryDropdownMenuLink">
             Joaillerie
           </a>
@@ -62,7 +84,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle px-2 link-diamonta-pink" role="button" data-toggle="dropdown"
+          <a href="#" class="nav-link dropdown-toggle px-2 link-light" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" id="mariageCelebrationDropdownMenuLink">
             Mariages & Célébrations
           </a>
@@ -72,7 +94,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle px-2 link-diamonta-pink" role="button" data-toggle="dropdown"
+          <a href="#" class="nav-link dropdown-toggle px-2 link-light" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" id="watchmakingDropdownMenuLink">
             Horlogerie
           </a>
@@ -82,7 +104,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle px-2 link-diamonta-pink" role="button" data-toggle="dropdown"
+          <a href="#" class="nav-link dropdown-toggle px-2 link-light" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" id="knowHowDropdownMenuLink">
             Savoir-Faire
           </a>
@@ -92,7 +114,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle px-2 link-diamonta-pink" role="button" data-toggle="dropdown"
+          <a href="#" class="nav-link dropdown-toggle px-2 link-light" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" id="servicesDropdownMenuLink">
             Services
           </a>
@@ -103,25 +125,4 @@
           </div>
         </li>
       </ul>
-
-      <div class="d-flex justify-content-end align-items-center col-md-auto">
-        <a href="<?= BASE_URL; ?>store/cart.php" class="nav-link px-2 link-diamonta-pink">
-          <i class="bi bi-bag-heart-fill fill-diamonta-pink fs-3"></i>
-        </a>
-
-        <?php if (isset($_GET['action']) && $_GET['action'] === 'logout') {
-          session_destroy();
-          redirect('index.php');
-        }
-
-        if (isset($_SESSION['user'])): ?>
-          <a href="?action=logout" class="nav-link px-2 link-diamonta-pink">
-            <button type="button" class="btn btn-diamonta-pink">Déconnexion</button>
-          </a>
-        <?php else: ?>
-
-          <a href="<?= BASE_URL; ?>login.php" type="button" class="btn btn-outline btn-diamonta-pink me-2">Connexion</a>
-          <a href="<?= BASE_URL; ?>register.php" type="button" class="btn btn-outline-diamonta-pink">Inscription</a>
-        <?php endif; ?>
-      </div>
     </header>
