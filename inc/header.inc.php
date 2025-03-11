@@ -108,6 +108,15 @@
         <a href="<?= BASE_URL; ?>store/cart.php" class="nav-link px-2 link-diamonta-pink">
           <i class="bi bi-bag-heart-fill fill-diamonta-pink fs-3"></i>
         </a>
+
+        <?php if (isset($_SESSION['user'])) : ?>
+          <a href="?action=logout" class="nav-link px-2 link-diamonta-pink">
+            <button type="button" class="btn btn-diamonta-pink">Déconnexion</button>
+          </a>
+          <?php if (isset($_GET['action']) && $_GET['action'] === 'logout') : ?>
+            <?php session_destroy(); ?>
+          <?php endif; ?>
+        <?php endif; ?>
         <a href="<?= BASE_URL; ?>login.php" type="button" class="btn btn-outline btn-diamonta-pink me-2">Connexion</a>
         <a href="<?= BASE_URL; ?>register.php" type="button" class="btn btn-outline-diamonta-pink">Inscription</a>
       </div>

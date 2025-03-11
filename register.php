@@ -78,12 +78,12 @@ if (!empty($_POST)) {
 
       $hashedPass = password_hash($password, PASSWORD_DEFAULT);
 
-      $duplicateEmail = checkDbEmail($email);
+      $duplicateEmail = checkDbEmailPassword($email, $hashedPass);
       if ($duplicateEmail) {
         $info .= message("L'email est déjà utilisé !", "danger");
       } else {
         addUser($lastname, $firstname, $email, $hashedPass, $address, $phone, $zip_code, $city, $country);
-        $info .= message("Inscription réussie ! Vous pouvez vous connecter <a href='connection.php' class='text-danger fw-bold'>ici</a> ", "success");
+        $info .= message("Inscription réussie ! Vous pouvez vous connecter <a href='login.php' class='text-danger fw-bold'>ici</a> ", "success");
       }
     }
   }

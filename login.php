@@ -2,13 +2,11 @@
 $title = "Connexion";
 require_once 'inc/functions.inc.php';
 $info = "";
-
 if (isset($_SESSION['user'])) {
   header("location:profile.php");
 }
-// var_dump($_SESSION);
 
-if (empty($_POST)) {
+if (!empty($_POST)) {
   $check = true; // c'est vide
   foreach ($_POST as $key => $value) {
     if (empty(trim($value))) {
@@ -17,10 +15,40 @@ if (empty($_POST)) {
   }
 
 
-  if (!$check) {
-    $info = "Veuillez remplir tous les champs";
+  if ($check === false) {
+    $info = message("Veuillez remplir tous les champs", "danger");
+  } else {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $user = checkDbEmailPassword($email, $password);
+
+    if ($user) {
+      if (password_verify($password, $user['mot_de_passe'])) {
+        session_start();
+        $_SESSION['user'] = $user;
+        redirect("profile.php");
+      } else {
+        $info .= message ("Mot de passe incorrect", "danger");
+      }
+    }
+
+    // $checkConnexion = checkDbEmailPassword($email, $password);
+    //  if ($checkConnexion) {
+    //   if (password_verify($password, $checkConnexion['password']))
+    //   {
+    //     $info .= message ("Connexion réussie", "success");
+    //     $_SESSION['user'] = $checkConnexion;
+    //     redirect("profile.php");
+    //   }
+    //   else {
+    //     $info .= message ("Mot de passe incorrect", "danger");
+    //   }
+
+  
+
   }
 }
+
 
 
 ?>
@@ -61,7 +89,7 @@ if (empty($_POST)) {
       </div>
       <div class="mb-3 position-relative">
         <label for="passwowrd" class="form-label">Mot de passe</label>
-        <input type="password" class="form-control" id="password" placeholder="Password">
+        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
         <i class="bi bi-eye" id="eye" onclick="showHidePass()"></i>
       </div>
 
@@ -70,6 +98,7 @@ if (empty($_POST)) {
       </div>
     </form>
     <p class="mt-2 text-light text-center">&copy; DIAMONTA 2025</p>
+
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

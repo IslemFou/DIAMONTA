@@ -37,12 +37,12 @@ function dbConnection(): object
 }
 
 // Check if user provided email already exists in the database
-function checkDbEmail(string $email): bool
+function checkDbEmailPassword(string $email , string $password): mixed
 {
   $PDO = dbConnection();
-  $sql = 'SELECT email from users WHERE email = :email';
+  $sql = 'SELECT email, mot_de_passe from users WHERE email = :email AND mot_de_passe = :mot_de_passe';
   $request = $PDO->prepare($sql);
-  $request->execute([':email' => $email]);
+  $request->execute([':email' => $email, ':mot_de_passe' => $password]);
   $result = $request->fetch();
   return $result;
 }
