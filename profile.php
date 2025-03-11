@@ -6,7 +6,7 @@ $user = $_SESSION['user'];
 
 ?>
 
-<h1>Welcome <?= $user['prenom']; ?></h1>
+<h1>Welcome <?= $user['email']; ?></h1>
 
 
 <?php require_once 'inc/footer.inc.php'; ?>

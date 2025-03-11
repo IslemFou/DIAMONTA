@@ -1,12 +1,16 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
 $title = "Connexion";
 require_once 'inc/functions.inc.php';
 $info = "";
+
 if (isset($_SESSION['user'])) {
-  header("location:profile.php");
+  redirect('profile.php');
 }
 
-if (!empty($_POST)) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $check = true; // c'est vide
   foreach ($_POST as $key => $value) {
     if (empty(trim($value))) {
@@ -15,41 +19,21 @@ if (!empty($_POST)) {
   }
 
 
-  if ($check === false) {
+  if (!$check) {
     $info = message("Veuillez remplir tous les champs", "danger");
   } else {
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $user = checkDbEmailPassword($email, $password);
+    $user = checkDbEmail($email);
 
-    if ($user) {
-      if (password_verify($password, $user['mot_de_passe'])) {
-        session_start();
-        $_SESSION['user'] = $user;
-        redirect("profile.php");
-      } else {
-        $info .= message ("Mot de passe incorrect", "danger");
-      }
+    if ($user && password_verify($password, $user['mot_de_passe'])) {
+      $_SESSION['user'] = $user;
+      redirect("profile.php");
+    } else {
+      $info .= message("Mot de passe incorrect", "danger");
     }
-
-    // $checkConnexion = checkDbEmailPassword($email, $password);
-    //  if ($checkConnexion) {
-    //   if (password_verify($password, $checkConnexion['password']))
-    //   {
-    //     $info .= message ("Connexion réussie", "success");
-    //     $_SESSION['user'] = $checkConnexion;
-    //     redirect("profile.php");
-    //   }
-    //   else {
-    //     $info .= message ("Mot de passe incorrect", "danger");
-    //   }
-
-  
-
   }
 }
-
-
 
 ?>
 
@@ -79,6 +63,7 @@ if (!empty($_POST)) {
 
 <body class="py-4 bg-diamonta-blue h-100" data-bs-theme="dark">
   <main class="d-flex flex-column justify-content-center align-items-center form-signin mx-auto h-100 w-75">
+    <?= $info; ?>
     <form action="" method="post"
       class="bg-diamonta-blue text-diamonta-pink p-5 rounded-3 text-dark col-5 border border-light border-2">
       <h1 class="h3 mb-3 fw-normal text-center">Connectez-vous</h1>

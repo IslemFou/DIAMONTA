@@ -1,13 +1,15 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+  ob_start(); // ob_start() est un outil essentiel pour la gestion du contenu et des en-têtes en PHP. Dans ton cas, il permet d'utiliser header() sans contrainte, de gérer tes redirections et d'afficher les erreurs ou les messages de confirmation aux endroits souhaités. Il faut toujours utilisé cette technique si on utilise des redirections et des headers.
+  session_start();
+}
 define('BASE_URL', "http://localhost/DIAMONTA/");
-session_start();
-
 function message(string $text, string $class): string
 {
   return
     '<div class="w-50 mx-auto d-flex align-items-center alert alert-' . $class . '">' .
     '<span class="mx-auto">' . $text . '</span>' .
-    '<button type="button" class="btn-close align-self-center position-absolute top-50% end-0" data-bs-dismiss="alert"></button>' .
+    '<button type="button" class="btn-close align-self-center position-absolute top-50% start-90%" data-bs-dismiss="alert"></button>' .
     '</div>';
 }
 
@@ -37,12 +39,12 @@ function dbConnection(): object
 }
 
 // Check if user provided email already exists in the database
-function checkDbEmailPassword(string $email , string $password): mixed
+function checkDbEmail(string $email): mixed
 {
   $PDO = dbConnection();
-  $sql = 'SELECT email, mot_de_passe from users WHERE email = :email AND mot_de_passe = :mot_de_passe';
+  $sql = 'SELECT email, mot_de_passe from users WHERE email = :email';
   $request = $PDO->prepare($sql);
-  $request->execute([':email' => $email, ':mot_de_passe' => $password]);
+  $request->execute([':email' => $email]);
   $result = $request->fetch();
   return $result;
 }

@@ -78,7 +78,7 @@ if (!empty($_POST)) {
 
       $hashedPass = password_hash($password, PASSWORD_DEFAULT);
 
-      $duplicateEmail = checkDbEmailPassword($email, $hashedPass);
+      $duplicateEmail = checkDbEmail($email);
       if ($duplicateEmail) {
         $info .= message("L'email est déjà utilisé !", "danger");
       } else {

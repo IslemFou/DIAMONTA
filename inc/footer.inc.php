@@ -1,5 +1,5 @@
 <?php require_once 'inc/functions.inc.php'; ?>
-
+<?php ob_end_flush(); ?>
 </main>
 <footer class="d-flex flex-column justify-content-center align-itms-center text-white">
   <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
