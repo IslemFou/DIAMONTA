@@ -24,6 +24,22 @@ h1 {
   display: block;
 }
 
+#hero {
+  max-height: 800px !important;
+  overflow: hidden !important;
+}
+
+#hero-video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+#hero .position-absolute {
+  top: 10% !important;
+  z-index: 10;
+}
+
 #rdv:hover {
   color: var(--diamonta-blue);
   border-color: var(--diamonta-pink);

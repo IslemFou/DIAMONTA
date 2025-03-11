@@ -29,8 +29,7 @@
       <button type="button" class="btn-close position-absolute top-50 end-0 translate-middle" data-bs-dismiss="alert"
         aria-label="Close"></button>
     </div>
-    <header class="container-fluid d-flex flex-column py-3 mb-4 border-bottom border-diamonta-pink"
-      data-bs-theme="dark">
+    <header class="container-fluid d-flex flex-column py-3 border-bottom border-diamonta-pink" data-bs-theme="dark">
       <div class="row w-100 d-flex justify-content-center align-items-center">
         <!-- Logo -->
         <div class="col-10 d-flex justify-content-center ">

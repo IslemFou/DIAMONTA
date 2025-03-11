@@ -3,17 +3,17 @@ require_once 'inc/functions.inc.php';
 require_once 'inc/header.inc.php';
 ?>
 
-<div class="text-center bg-diamonta-blue mb-5">
-  <div class="container-fluid d-flex justify-content-around align-items-center py-5">
-    <div class="d-flex flex-column col-md-5 justify-content-center align-items-center">
-      <h2 class="h2 text-light text-capitalize mb-3 lh-base w-50">Avec tout notre amour, depuis 1837</h2>
-      <a href="#" class="text-diamonta-pink p-1 text-decoration-none border-bottom border-light">Découvrir</a>
-    </div>
-    <div class="col-md-7">
-      <video src="<?= BASE_URL; ?>assets/media/video/jewelry_store.mp4" height="600px" width="800px" autoplay loop muted
-        class="img-fluid"></video></video>
-    </div>
+<div class="text-center mb-5 position-relative" id="hero">
+  <video autoplay muted loop id="hero-video">
+    <source src="./assets/media/video/jewelry_store.mp4" type="video/mp4">
+    Votre navigateur ne gère pas la video
+  </video>
+  <div
+    class="position-absolute start-50 translate-middle d-flex flex-column col-md-12 justify-content-center align-items-center">
+    <h2 class="h2 text-light text-capitalize lh-base">Avec tout notre amour, depuis 1837</h2>
+    <a href="#" class="text-diamonta-pink p-1 text-decoration-none border-bottom border-light">Découvrir</a>
   </div>
+
 </div>
 
 <div class=" d-flex justify-content-evenly align-items-center my-5 py-5">
