@@ -108,8 +108,7 @@
         <a href="<?= BASE_URL; ?>store/cart.php" class="nav-link px-2 link-diamonta-pink">
           <i class="bi bi-bag-heart-fill fill-diamonta-pink fs-3"></i>
         </a>
-        <a href="<?= BASE_URL; ?>connection.php" type="button"
-          class="btn btn-outline btn-diamonta-pink me-2">Connexion</a>
+        <a href="<?= BASE_URL; ?>login.php" type="button" class="btn btn-outline btn-diamonta-pink me-2">Connexion</a>
         <a href="<?= BASE_URL; ?>register.php" type="button" class="btn btn-outline-diamonta-pink">Inscription</a>
       </div>
     </header>
