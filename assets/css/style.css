@@ -42,22 +42,121 @@ h6 {
 }
 
 .btn-diamonta-pink {
-  background-color: var(--diamonta-pink);
-  color: #111;
+  background-color: var(--diamonta-pink) !important;
+  color: #111 !important;
 }
+
+.btn-outline-diamonta-pink {
+  background-color: transparent !important;
+  border: 1px solid var(--diamonta-pink) !important;
+  border-color: var(--diamonta-pink) !important;
+  color: var(--diamonta-pink) !important;
+}
+
+.btn-outline-diamonta-pink:hover {
+  border-color: #eee !important;
+  color: #eee !important;
+}
+
+.btn-outline-diamonta-blue {
+  background-color: transparent !important;
+  border: 1px solid var(--diamonta-blue) !important;
+  border-color: var(--diamonta-blue) !important;
+  color: var(--diamonta-blue) !important;
+}
+
 .btn-diamonta-blue {
-  background-color: var(--diamonta-blue);
-  color: #eee;
+  background-color: var(--diamonta-blue) !important;
+  color: #eee !important;
+}
+
+.bg-diamonta-pink {
+  background-color: var(--diamonta-pink) !important;
+}
+
+.bg-diamonta-blue {
+  background-color: var(--diamonta-blue) !important;
+}
+
+.text-diamonta-pink {
+  color: var(--diamonta-pink) !important;
+}
+
+.text-diamonta-blue {
+  color: var(--diamonta-blue) !important;
+}
+
+.border-diamonta-pink {
+  border-color: var(--diamonta-pink) !important;
+}
+.border-diamonta-blue {
+  border-color: var(--diamonta-blue) !important;
+}
+
+.link-diamonta-pink {
+  color: var(--diamonta-pink) !important;
+}
+
+.link-diamonta-blue {
+  color: var(--diamonta-blue) !important;
+}
+
+.link-diamonta-pink:hover {
+  color: #eee !important;
+}
+
+.link-diamonta-blue:hover {
+  color: #eee !important;
+}
+
+.btn-diamonta-pink:hover {
+  background-color: #eee !important;
+  color: var(--diamonta-blue) !important;
+}
+
+.btn-diamonta-blue:hover {
+  background-color: #eee !important;
+  color: var(--diamonta-blue) !important;
+}
+
+#logo {
+  font-family: "Prata", "serif" !important;
+}
+
+.fill-diamonta-pink {
+  fill: var(--diamonta-pink) !important;
+}
+
+.fill-diamonta-blue {
+  fill: var(--diamonta-blue) !important;
 }
 
 main {
-  /* padding: 10rem 4rem; */
   min-height: 770px;
 }
 
-#eye {
+#eyeFill {
   position: absolute !important;
   top: 50% !important;
   left: 95% !important;
   transform: translate(-50%, -50%) !important;
+}
+
+#eye {
+  position: absolute !important;
+  top: 55% !important;
+  left: 90% !important;
+}
+
+.carousel-indicators {
+  bottom: 30px !important;
+}
+
+#diamondBand img {
+  height: 100px !important;
+}
+
+#discover img {
+  height: 600px !important;
+  width: auto !important;
 }

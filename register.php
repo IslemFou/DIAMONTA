@@ -1,10 +1,6 @@
 <?php
 require_once 'inc/functions.inc.php';
 
-// if (isset($_SESSION['user'])) {
-//   redirect('profile.php');
-// }
-
 $info = '';
 
 if (!empty($_POST)) {
@@ -96,9 +92,9 @@ if (!empty($_POST)) {
 require_once 'inc/header.inc.php';
 ?>
 
-<div class="container rounded-4 w-100">
+<div class="container rounded-4 w-100" data-bs-theme="dark">
   <div class="p-5 pb-4 border-bottom-0 text-center">
-    <h1 class="fw-bold mb-0 fs-2 text-center">Veuillez vous inscrire</h1>
+    <h1 class="fw-bold mb-0 fs-2 text-center text-diamonta-pink">Veuillez vous inscrire</h1>
   </div>
   <?= $info; ?>
   <div class="p-5 pt-0 d-flex justify-content-center align-items-center">
@@ -125,7 +121,7 @@ require_once 'inc/header.inc.php';
           <label for="password">Mot de passe</label>
           <div class="position-relative">
             <input type="password" class="form-control rounded-3 " id="password" name="password" placeholder="********">
-            <i class="link-dark bi bi-eye-fill" id="eye" onclick="showHidePass()"></i>
+            <i class="bi bi-eye-fill" id="eyeFill" onclick="showHidePass()"></i>
           </div>
         </div>
       </div>

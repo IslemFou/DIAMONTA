@@ -3,13 +3,13 @@
 </main>
 <footer class="d-flex flex-column justify-content-center align-itms-center text-white">
   <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-    <li><a href="#" class="nav-link px-2 link-light">Accueil</a></li>
-    <li><a href="#" class="nav-link px-2 link-light">Haute Joaillerie</a></li>
-    <li><a href="#" class="nav-link px-2 link-light">Joaillerie</a></li>
-    <li><a href="#" class="nav-link px-2 link-light">Mariages & Célébrations</a></li>
-    <li><a href="#" class="nav-link px-2 link-light">Horlogerie</a></li>
-    <li><a href="#" class="nav-link px-2 link-light">Savoir-Faire</a></li>
-    <li><a href="#" class="nav-link px-2 link-light">Services</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Accueil</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Haute Joaillerie</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Joaillerie</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Mariages & Célébrations</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Horlogerie</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Savoir-Faire</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Services</a></li>
   </ul>
   <p class="text-center text-white">©2025 Diamonta</p>
 </footer>
