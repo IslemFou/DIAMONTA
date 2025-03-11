@@ -4,7 +4,7 @@ require_once 'inc/functions.inc.php';
 $info = "";
 
 if (isset($_SESSION['user'])) {
-    header("location:profil.php");
+    header("location:profile.php");
 }
 // var_dump($_SESSION);
 
