@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = checkDbEmail($email);
 
     if ($user && password_verify($password, $user['mot_de_passe'])) {
-      $_SESSION['user'] = $user;
+    $user;
       redirect("profile.php");
     } else {
       $info .= message("Mot de passe incorrect", "danger");
@@ -62,24 +62,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body class="py-4 bg-diamonta-blue h-100" data-bs-theme="dark">
-  <main class="d-flex flex-column justify-content-center align-items-center form-signin mx-auto h-100 w-75">
+  <main class="d-flex flex-column justify-content-center align-items-center form-signin mx-auto h-100 w-75 row">
     <?= $info; ?>
     <form action="" method="post"
-      class="bg-diamonta-blue text-diamonta-pink p-5 rounded-3 text-dark col-5 border border-light border-2">
+      class="bg-diamonta-blue text-diamonta-pink p-5 text-dark col-sm-12 border border-light col-md-auto">
       <h1 class="h3 mb-3 fw-normal text-center">Connectez-vous</h1>
 
       <div class="mb-3">
         <label for="email" class="form-label">Adresse e-mail</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        <input type="email" class="form-control bg-transparent rounded-0" id="email" name="email" placeholder="name@example.com">
       </div>
       <div class="mb-3 position-relative">
         <label for="passwowrd" class="form-label">Mot de passe</label>
-        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+        <input type="password" class="form-control bg-transparent rounded-0" id="password" placeholder="Password" name="password">
         <i class="bi bi-eye" id="eye" onclick="showHidePass()"></i>
       </div>
 
       <div class="row">
-        <button class="btn btn-diamonta-pink py-2 w-50 col-md-6 mx-auto" type="submit">Se connecter</button>
+        <button class="btn btn-diamonta-pink py-3 w-75 col-md-6 mx-auto border-0 rounded-0 m-2" type="submit">Se connecter</button>
       </div>
     </form>
     <p class="mt-2 text-light text-center">&copy; DIAMONTA 2025</p>

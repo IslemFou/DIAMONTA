@@ -135,6 +135,11 @@ main {
   min-height: 770px;
 }
 
+/* input[type="email"] {
+  background-color: #77194a;
+  color: #382d52;
+} */
+
 #eyeFill {
   position: absolute !important;
   top: 50% !important;

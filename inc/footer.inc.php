@@ -1,15 +1,12 @@
 <?php require_once 'inc/functions.inc.php'; ?>
-<?php ob_end_flush(); ?>
+<?php ob_end_flush(); // Send the contents of the output buffer and turn off output buffering. It's typically used to ensure that all output is sent to the browser immediately, rather than being buffered by PHP. This can be useful in certain situations, such as when you need to send a response to the browser before the script has finished executing. ?>
 </main>
 <footer class="d-flex flex-column justify-content-center align-itms-center text-white">
   <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Accueil</a></li>
-    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Haute Joaillerie</a></li>
-    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Joaillerie</a></li>
-    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Mariages & Célébrations</a></li>
-    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Horlogerie</a></li>
-    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Savoir-Faire</a></li>
-    <li><a href="#" class="nav-link px-2 link-diamonta-pink">Services</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">SERVICES CLIENTS</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">LIVRAISON ET RETOURS</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">CARRIERES</a></li>
+    <li><a href="#" class="nav-link px-2 link-diamonta-pink">MENTION LEGALES</a></li>
   </ul>
   <p class="text-center text-white">©2025 Diamonta</p>
 </footer>

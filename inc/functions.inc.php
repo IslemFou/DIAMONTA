@@ -7,7 +7,7 @@ define('BASE_URL', "http://localhost/DIAMONTA/");
 function message(string $text, string $class): string
 {
   return
-    '<div class="w-50 mx-auto d-flex align-items-center alert alert-' . $class . '">' .
+    '<div class="w-100 mx-auto d-flex align-items-around alert alert-' . $class . '">' .
     '<span class="mx-auto">' . $text . '</span>' .
     '<button type="button" class="btn-close align-self-center position-absolute top-50% start-90%" data-bs-dismiss="alert"></button>' .
     '</div>';

@@ -94,7 +94,7 @@ require_once 'inc/header.inc.php';
 
 <div class="container rounded-4 w-100" data-bs-theme="dark">
   <div class="p-5 pb-4 border-bottom-0 text-center">
-    <h1 class="fw-bold mb-0 fs-2 text-center text-diamonta-pink">Veuillez vous inscrire</h1>
+    <h1 class=" mb-0 fs-2 text-center text-diamonta-pink">Création de compte chez DIAMONTA</h1>
   </div>
   <?= $info; ?>
   <div class="p-5 pt-0 d-flex justify-content-center align-items-center">
@@ -103,24 +103,24 @@ require_once 'inc/header.inc.php';
       <div class="row">
         <div class="col-md-6 mb-3">
           <label for="lastname">Nom</label>
-          <input type="text" class="form-control rounded-3" id="lastanme" name="lastname" placeholder="Pierre">
+          <input type="text" class="form-control bg-transparent rounded-0" id="lastanme" name="lastname" placeholder="Pierre">
         </div>
         <div class="col-md-6 mb-3">
           <label for="firstname">Prénom</label>
-          <input type="text" class="form-control rounded-3" id="firstname" name="firstname" placeholder="Brillante">
+          <input type="text" class="form-control bg-transparent rounded-0" id="firstname" name="firstname" placeholder="Brillante">
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-6 mb-3">
           <label for="email">Email</label>
-          <input type="text" class="form-control rounded-3" id="email" name="email"
+          <input type="text" class="form-control bg-transparent rounded-0" id="email" name="email"
             placeholder="pierre.brillante@example.com">
         </div>
         <div class="col-md-6 mb-3">
           <label for="password">Mot de passe</label>
           <div class="position-relative">
-            <input type="password" class="form-control rounded-3 " id="password" name="password" placeholder="********">
+            <input type="password" class="form-control bg-transparent rounded-0" id="password" name="password" placeholder="********">
             <i class="bi bi-eye-fill" id="eyeFill" onclick="showHidePass()"></i>
           </div>
         </div>
@@ -129,11 +129,11 @@ require_once 'inc/header.inc.php';
       <div class="row">
         <div class="col-md-6 mb-3">
           <label for="phone">Téléphone</label>
-          <input type="text" class="form-control rounded-3" id="phone" name="phone" placeholder="0612345678">
+          <input type="text" class="form-control bg-transparent rounded-0" id="phone" name="phone" placeholder="0612345678">
         </div>
         <div class="col-md-6 mb-3">
           <label for="address">Adresse</label>
-          <input type="text" class="form-control rounded-3" id="address" name="address"
+          <input type="text" class="form-control bg-transparent rounded-0" id="address" name="address"
             placeholder="1 rue des pierres précieuses">
         </div>
       </div>
@@ -141,24 +141,37 @@ require_once 'inc/header.inc.php';
       <div class="row">
         <div class="col-md-4 mb-3">
           <label for="zip_code">Code Postal</label>
-          <input type="text" class="form-control rounded-3" id="zip_code" name="zip_code" placeholder="75010">
+          <input type="text" class="form-control bg-transparent rounded-0" id="zip_code" name="zip_code" placeholder="75010">
         </div>
         <div class="col-md-4 mb-3">
           <label for="city">Ville</label>
-          <input type="text" class="form-control rounded-3" id="city" name="city" placeholder="Paris">
+          <input type="text" class="form-control bg-transparent rounded-0" id="city" name="city" placeholder="Paris">
         </div>
         <div class="col-md-4 mb-3">
           <label for="country">Pays</label>
-          <input type="text" class="form-control rounded-3" id="country" name="country" placeholder="France">
+          <input type="text" class="form-control bg-transparent rounded-0" id="country" name="country" placeholder="France">
         </div>
       </div>
 
       <div class="row d-flex flex-column justify-content-center align-items-center mt-3">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <button class="w-25 col-md-6 mb-2 btn btn-lg rounded-3 btn-diamonta-pink" type="submit">S'inscrire</button>
-          <small class="col-md-12 text-white text-center">En cliquant sur <em>s'inscrire</em> vous acceptez les
+
+      <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input bg-transparent" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+       J'accepte les termes et conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center mt-3">
+          <button class="w-75 p-2 col-md-6 m-2 btn btn-lg rounded-0 btn-diamonta-pink" type="submit">S'inscrire</button>
+          <!-- <small class="col-md-12 text-white text-center">En cliquant sur <em>s'inscrire</em> vous acceptez les
             termes et
-            conditions.</small>
+            conditions.</small> -->
         </div>
       </div>
 
