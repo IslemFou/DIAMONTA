@@ -21,15 +21,15 @@
 
 <body>
   <main>
-    <div
+    <!-- <div
       class=" bg-diamonta-pink d-flex justify-content-center align-items-center position-relative alert rounded-0 p-3">
       <p class="text-diamonta-blue text-uppercase text-center m-0">Réalisez vos achats sur notre
         e-boutique et
         bénéficiez de la livraison express offerte</p>
       <button type="button" class="btn-close position-absolute top-50 end-0 translate-middle" data-bs-dismiss="alert"
         aria-label="Close"></button>
-    </div>
-    <header class="container-fluid d-flex flex-column py-3 border-bottom border-diamonta-pink" data-bs-theme="dark">
+    </div> -->
+    <header class="container-fluid d-flex flex-column py-3 border-diamonta-pink" data-bs-theme="dark">
       <div class="row w-100 d-flex justify-content-center align-items-center">
         <!-- Logo -->
         <div class="col-10 d-flex justify-content-center ">
@@ -127,7 +127,7 @@
       <div class="modal modal-aside loginaside-modal js-login-modal" id="loginModal" tabindex="-1"
         aria-labelledby="loginModalLabel" aria-model="true" role="dialog">
         <div class="modal-dialog js-aside-login-modal-content" role="document" data-url="<?= BASE_URL; ?>login.php">
-          <div class="modal-content">
+          <!-- <div class="modal-content">
             <div class="content h-100">
               <div class="row h-100 w-100 m-0">
                 <div class="col-12 col-lg-6 p-0 immersive-modal-left bottom-on-small">
@@ -137,6 +137,6 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
     </header>
