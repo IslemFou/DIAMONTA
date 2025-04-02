@@ -11,22 +11,39 @@
 }
 
 body {
-  font-family: "Noto serif", "serif";
+  font-family: "Quicksand", "sans-serif";
   background-color: var(--diamonta-blue);
   color: #fff;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family: "Prata", "serif";
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+#hero {
+  max-height: 800px !important;
+  overflow: hidden !important;
+}
+
+#hero-video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+#hero .position-absolute {
+  top: 10% !important;
+  z-index: 10;
+}
+
+#rdv:hover {
+  color: var(--diamonta-blue);
+  border-color: var(--diamonta-pink);
+  background-color: var(--diamonta-pink) !important;
 }
 
 .btn-diamonta {
@@ -101,12 +118,8 @@ h6 {
   color: var(--diamonta-blue) !important;
 }
 
-.link-diamonta-pink:hover {
-  color: #eee !important;
-}
-
-.link-diamonta-blue:hover {
-  color: #eee !important;
+.link-light:hover {
+  color: var(--diamonta-pink) !important;
 }
 
 .btn-diamonta-pink:hover {
@@ -165,3 +178,17 @@ main {
   height: 600px !important;
   width: auto !important;
 }
+
+header:hover {
+  ul.nav {
+    display: flex !important;
+  }
+}
+
+/* Login/Register Aside Modal */
+
+#loginModal {
+  display: block;
+  
+}
+
