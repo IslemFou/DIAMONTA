@@ -1,5 +1,6 @@
 <?php
-require_once 'inc/functions.inc.php';
+require_once 'inc/functions/db.php';
+require_once 'inc/functions/functions.php';
 require_once 'inc/header.inc.php';
 ?>
 
@@ -28,16 +29,7 @@ require_once 'inc/header.inc.php';
         <p class="fw-light">2000 €</p>
       </div>
 
-      <div class="carousel-indicators start-0 translate-start-y bottom-10 translate-end-y">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-
-      <a href="#"
+      <a href="pages/show_product.php"
         class="text-diamonta-pink p-1 mt-5 text-decoration-none border-bottom border-light text-center text-uppercase">Plus
         de
         modèles</a>

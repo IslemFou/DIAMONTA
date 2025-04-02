@@ -3,7 +3,8 @@ if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 $title = "Connexion";
-require_once 'inc/functions.inc.php';
+require_once 'inc/functions/db.php';
+require_once 'inc/functions/functions.php';
 $info = "";
 
 if (isset($_SESSION['user'])) {
@@ -27,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = checkDbEmail($email);
 
     if ($user && password_verify($password, $user['mot_de_passe'])) {
-    $user;
+      $user;
       redirect("profile.php");
     } else {
       $info .= message("Mot de passe incorrect", "danger");
@@ -70,16 +71,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <div class="mb-3">
         <label for="email" class="form-label">Adresse e-mail</label>
-        <input type="email" class="form-control bg-transparent rounded-0" id="email" name="email" placeholder="name@example.com">
+        <input type="email" class="form-control bg-transparent rounded-0" id="email" name="email"
+          placeholder="name@example.com">
       </div>
       <div class="mb-3 position-relative">
         <label for="passwowrd" class="form-label">Mot de passe</label>
-        <input type="password" class="form-control bg-transparent rounded-0" id="password" placeholder="Password" name="password">
+        <input type="password" class="form-control bg-transparent rounded-0" id="password" placeholder="Password"
+          name="password">
         <i class="bi bi-eye" id="eye" onclick="showHidePass()"></i>
       </div>
 
       <div class="row">
-        <button class="btn btn-diamonta-pink py-3 w-75 col-md-6 mx-auto border-0 rounded-0 m-2" type="submit">Se connecter</button>
+        <button class="btn btn-diamonta-pink py-3 w-75 col-md-6 mx-auto border-0 rounded-0 m-2" type="submit">Se
+          connecter</button>
       </div>
     </form>
     <p class="mt-2 text-light text-center">&copy; DIAMONTA 2025</p>
