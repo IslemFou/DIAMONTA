@@ -179,3 +179,11 @@ header:hover {
     display: flex !important;
   }
 }
+
+/* Login/Register Aside Modal */
+
+#loginModal {
+  display: block;
+  
+}
+

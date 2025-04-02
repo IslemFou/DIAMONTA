@@ -124,4 +124,19 @@
           </div>
         </li>
       </ul>
+      <div class="modal modal-aside loginaside-modal js-login-modal" id="loginModal" tabindex="-1"
+        aria-labelledby="loginModalLabel" aria-model="true" role="dialog">
+        <div class="modal-dialog js-aside-login-modal-content" role="document" data-url="<?= BASE_URL; ?>login.php">
+          <div class="modal-content">
+            <div class="content h-100">
+              <div class="row h-100 w-100 m-0">
+                <div class="col-12 col-lg-6 p-0 immersive-modal-left bottom-on-small">
+                  <div class="modal-image-background">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </header>
