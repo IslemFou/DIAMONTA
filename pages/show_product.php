@@ -5,12 +5,12 @@ require_once '../inc/header.inc.php';
 
 ?>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12 col-md-5 bg-diamonta-purple p-5 d-flex justify-content-center m-3">
+<div class="container-fluid">
+  <div class="row justify-content-center gap-4">
+    <div class="col-sm-12 col-md-5 bg-diamonta-purple p-5 d-flex justify-content-center mt-4">
       <div class="d-flex flex-column align-items-start mt-5">
         <div class="d-flex flex-column align-items-center justify-content-center">
-          <h3 class="text-center">Bague Diamant</h3>
+          <h3 class="text-center">Bague Lady Fleurale</h3>
           <p class="lead">Bague Lady Fleurale en Or rose, taille ovale, blanche</p>
           <p class="price h3 w-100 mx-auto text-center fw-light">1.900€</p>
         </div>
@@ -60,7 +60,7 @@ require_once '../inc/header.inc.php';
       </div>
     </div>
     <div
-      class="col-sm-12 col-md-5 bg-diamonta-purple p-5 d-flex flex-column justify-content-center align-items-center m-3">
+      class="col-sm-12 col-md-5 bg-diamonta-purple p-5 d-flex flex-column justify-content-center align-items-center mt-4">
       <img src="<?= BASE_URL; ?>assets/media/img/bague-w-1.svg" alt="bague en diamant" class="img-fluid mb-3"
         id="product-img">
       <div class="row mb-3">
