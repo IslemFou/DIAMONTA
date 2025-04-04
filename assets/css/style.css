@@ -1,7 +1,7 @@
 :root {
   --diamonta-blue: #10051f;
   --diamonta-pink: #e7a4a4;
-  --diamonta-purple: #e7a4a4 opacity(0.22);
+  --diamonta-purple: rgba(231, 164, 164, 0.22);
 }
 
 * {
@@ -174,8 +174,10 @@ main {
   width: auto !important;
 }
 
-#footer_background {
-  top: -50px !important;
+footer {
+  height: 500px !important;
+  background: url("../media/img/footer-diamonds.png") no-repeat top center !important;
+  background-size: cover !important;
 }
 
 .material {
@@ -208,4 +210,25 @@ main {
     #edc09f 50%,
     #d8a191 100%
   ) !important;
+}
+
+/*  CSS show_product */
+
+.bg-diamonta-purple {
+  background-color: var(--diamonta-purple) !important;
+}
+
+div.rock:hover {
+  border: 1px solid var(--diamonta-pink) !important;
+}
+
+div.size > p:hover {
+  background-color: var(--diamonta-pink) !important;
+}
+
+#addToCartBtn {
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
 }

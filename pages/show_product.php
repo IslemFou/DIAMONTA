@@ -5,48 +5,74 @@ require_once '../inc/header.inc.php';
 
 ?>
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <div class="d-flex flex-column align-items-center mt-5">
-        <h3>Bague Diamant</h3>
-        <p class="lead">Bague Lady Fleurale en Or rose, taille ovale, blanche</p>
-        <p class="price">2000€</p>
-        <h4>Matériaux</h4>
+    <div class="col-sm-12 col-md-5 bg-diamonta-purple p-5 d-flex justify-content-center m-3">
+      <div class="d-flex flex-column align-items-start mt-5">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <h3 class="text-center">Bague Diamant</h3>
+          <p class="lead">Bague Lady Fleurale en Or rose, taille ovale, blanche</p>
+          <p class="price h3 w-100 mx-auto text-center fw-light">1.900€</p>
+        </div>
+        <h4 class="mb-3">Matériaux</h4>
         <div class="d-flex justify-content-left gap-3 mb-5">
           <div class="material white-gold position-relative">
-            <p class="position-absolute top-100 start-0 ">Or blanc</p>
+            <p class="position-absolute top-100 start-0 w-100 text-center">Or blanc</p>
           </div>
           <div class="material gold position-relative">
-            <p class="position-absolute top-100 start-0 ">Or jaune</p>
+            <p class="position-absolute top-100 start-0 w-100 text-center">Or jaune</p>
           </div>
           <div class="material pink-gold position-relative">
-            <p class="position-absolute top-100 start-0 ">Or rose</p>
+            <p class="position-absolute top-100 start-0 w-100 text-center">Or rose</p>
           </div>
         </div>
-        <h4>Pierre</h4>
-        <div class="d-flex justify-content-center">
-          <div class="rock">
+        <h4 class="mb-3">Pierre</h4>
+        <div class="d-flex justify-content-center gap-5 mb-5">
+          <div class="rock d-flex flex-column align-items-center gap-2 p-4">
             <img src="<?= BASE_URL; ?>assets/media/img/diamond.svg" alt="icone diamant" class="img-fluid">
-            <p>Diamant</p>
+            <p class="text-center px-5 m-0">Diamant</p>
           </div>
-          <div class="rock">
+          <div class="rock d-flex flex-column align-items-center gap-2 p-4">
             <img src="<?= BASE_URL; ?>assets/media/img/diamond.svg" alt="icone diamant" class="img-fluid">
-            <p>Oxyde de zirconium</p>
+            <p class="text-center px-5 m-0">Zirconium</p>
           </div>
         </div>
-        <ul>
-          <li>Taille 1</li>
-          <li>Taille 2</li>
-          <li>Taille 3</li>
-          <li>Taille 4</li>
-          <li>Taille 5</li>
-        </ul>
-        <button>Ajouter au Panier</button>
+        <h4 class="mb-3">Taille</h4>
+        <div class="d-flex justify-content-center gap-2 mb-5">
+          <div class="size border border-diamonta-pink">
+            <p class="p-3 m-0 w-100">50</p>
+          </div>
+          <div class="size border border-diamonta-pink">
+            <p class="p-3 m-0 w-100">52</p>
+          </div>
+          <div class="size border border-diamonta-pink">
+            <p class="p-3 m-0 w-100">55</p>
+          </div>
+          <div class="size border border-diamonta-pink">
+            <p class="p-3 m-0 w-100">58</p>
+          </div>
+          <div class="size border border-diamonta-pink">
+            <p class="p-3 m-0 w-100">60</p>
+          </div>
+        </div>
+        <button class="btn btn-light w-50 mx-auto" id="addToCartBtn">Ajouter au
+          Panier</button>
       </div>
     </div>
-    <div class="col-sm-12 col-md-6 mt-5">
-      <img src="<?= BASE_URL; ?>assets/media/img/bague-2.png" alt="bague en diamant" class="img-fluid" id="product-img">
+    <div
+      class="col-sm-12 col-md-5 bg-diamonta-purple p-5 d-flex flex-column justify-content-center align-items-center m-3">
+      <img src="<?= BASE_URL; ?>assets/media/img/bague-w-1.svg" alt="bague en diamant" class="img-fluid mb-3"
+        id="product-img">
+      <div class="row mb-3">
+        <div class="col-4"><img src="<?= BASE_URL; ?>assets/media/img/bague-main-1.svg" alt="bague portee"></div>
+        <div class="col-4"><img src="<?= BASE_URL; ?>assets/media/img/bague-w-2.svg" alt="bague or blanc"></div>
+        <div class="col-4"><img src="<?= BASE_URL; ?>assets/media/img/bague-w-2.svg" alt="bague or blanc"></div>
+      </div>
+      <div class="row">
+        <div class="col-4"><img src="<?= BASE_URL; ?>assets/media/img/bague-main-1.svg" alt="bague portee"></div>
+        <div class="col-4"><img src="<?= BASE_URL; ?>assets/media/img/bague-w-3.png" alt="bague or rose"></div>
+        <div class="col-4"><img src="<?= BASE_URL; ?>assets/media/img/bague-w-2.svg" alt="bague or blanc"></div>
+      </div>
     </div>
   </div>
 </div>
