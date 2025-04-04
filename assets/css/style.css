@@ -1,6 +1,7 @@
 :root {
   --diamonta-blue: #10051f;
   --diamonta-pink: #e7a4a4;
+  --diamonta-purple: #e7a4a4 opacity(0.22);
 }
 
 * {
@@ -173,8 +174,38 @@ main {
   width: auto !important;
 }
 
-/* header:hover {
-  ul.nav {
-    display: flex !important;
-  }
-} */
+#footer_background {
+  top: -50px !important;
+}
+
+.material {
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.material.white-gold {
+  background: linear-gradient(
+    120deg,
+    #76777c 0%,
+    #e0e3f2 50%,
+    #f2f2f2 100%
+  ) !important;
+}
+
+.material.gold {
+  background: linear-gradient(
+    120deg,
+    #a0703a 0%,
+    #ffe1a6 50%,
+    #ffe380 100%
+  ) !important;
+}
+
+.material.pink-gold {
+  background: linear-gradient(
+    120deg,
+    #c28383 0%,
+    #edc09f 50%,
+    #d8a191 100%
+  ) !important;
+}

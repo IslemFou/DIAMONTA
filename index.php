@@ -59,8 +59,8 @@ require_once 'inc/header.inc.php';
   </div>
 
   <div class="col-md-3 d-flex flex-column justify-content-center align-items-center gap-3">
-    <img src="<?= BASE_URL; ?>assets/media/img/bagues-1.png." class="img-fluid" alt="...">
-    <h5 class="h5 lh-base fw-bold">Bagues Diamant</h5>
+    <img src="<?= BASE_URL; ?>assets/media/img/boucles-1.png." class="img-fluid" alt="...">
+    <h5 class="h5 lh-base fw-bold">Boucles</h5>
     <p class="fw-light">Or blanc certies de diamants</p>
   </div>
 
