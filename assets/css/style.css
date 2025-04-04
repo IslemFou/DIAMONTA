@@ -1,5 +1,5 @@
 :root {
-  --diamonta-blue: #190c3b;
+  --diamonta-blue: #10051f;
   --diamonta-pink: #e7a4a4;
 }
 
@@ -16,13 +16,14 @@ body {
   color: #fff;
 }
 
-h1 {
+.navbar-brand {
+  font-size: 1.4rem;
   font-family: "Prata", "serif";
 }
 
-.dropdown:hover .dropdown-menu {
+/* .dropdown:hover .dropdown-menu {
   display: block;
-}
+} */
 
 #hero {
   /* max-height: 800px !important; */
@@ -133,10 +134,6 @@ h1 {
   color: var(--diamonta-blue) !important;
 }
 
-#logo {
-  font-family: "Prata", "serif" !important;
-}
-
 .fill-diamonta-pink {
   fill: var(--diamonta-pink) !important;
 }
@@ -167,10 +164,6 @@ main {
   left: 90% !important;
 }
 
-.carousel-indicators {
-  bottom: 30px !important;
-}
-
 #diamondBand img {
   height: 100px !important;
 }
@@ -180,14 +173,8 @@ main {
   width: auto !important;
 }
 
-header:hover {
+/* header:hover {
   ul.nav {
     display: flex !important;
   }
-}
-
-/* Login/Register Aside Modal */
-
-#loginModal {
-  display: block;
-}
+} */
