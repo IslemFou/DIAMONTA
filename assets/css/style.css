@@ -2,6 +2,7 @@
   --diamonta-blue: #10051f;
   --diamonta-pink: #e7a4a4;
   --diamonta-purple: rgba(231, 164, 164, 0.22);
+  --bs-accordion-btn-color: #e7a4a4 !important;
 }
 
 * {
@@ -227,8 +228,60 @@ div.size > p:hover {
 }
 
 #addToCartBtn {
-  border-top-right-radius: 10px !important;
-  border-bottom-left-radius: 10px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 0 !important;
   border-top-left-radius: 0 !important;
+}
+
+.accordion-button {
+  background-color: var(--diamonta-blue) !important;
+  border-color: var(--diamonta-pink) !important;
+  border-radius: 0 !important;
+}
+
+.bi-plus {
+  color: white !important;
+  font-size: 2rem !important;
+  left: 99% !important;
+}
+
+.accordion-button.collapsed {
+  color: white !important;
+}
+
+.accordion-button.collapsed::after {
+  background-image: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-image: none !important;
+  color: white !important;
+  background-color: var(--diamonta-blue) !important;
+  border-color: var(--diamonta-pink) !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: var(--diamonta-blue) !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: var(--diamonta-pink) !important;
+  color: var(--diamonta-blue) !important;
+}
+
+.carousel-control-prev {
+  left: -5% !important;
+}
+
+.carousel-control-next {
+  right: -5% !important;
 }
