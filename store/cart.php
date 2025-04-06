@@ -77,7 +77,7 @@ require_once '../inc/header.inc.php';
       <p class="text-decoration-underline">Frais de livraison</p>
       <p class="fw-bold h3">0€ TTC</p>
     </div>
-    <hr class="border-diamonta-pink">
+    <hr class="border-diamonta-pink border-2">
     <div class="d-flex justify-content-between">
       <h5 class="fw-bold">Total estimé</h5>
       <p class="fw-bold h3">2650€ TTC</p>
