@@ -4,17 +4,22 @@ require_once 'inc/functions/functions.php';
 require_once 'inc/header.inc.php';
 ?>
 
-<div class="text-center mb-5 position-relative" id="hero">
-  <video autoplay muted loop id="hero-video">
-    <source src="./assets/media/video/jewelry_store.mp4" type="video/mp4">
-    Votre navigateur ne gère pas la video
-  </video>
-  <div
-    class="position-absolute start-50 translate-middle d-flex flex-column col-md-12 justify-content-center align-items-center">
-    <h2 class="h2 text-light text-capitalize lh-base">Avec tout notre amour, depuis 1837</h2>
-    <a href="#" class="text-diamonta-pink p-1 text-decoration-none border-bottom border-light">Découvrir</a>
-  </div>
+<div class="container mt-5 mb-5">
+  <div class="row text-center  d-flex justify-content-center align-items-center" id="hero">
 
+    <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center mb-sm-3">
+      <h2 class="h2 text-light text-capitalize lh-base">Avec tout notre amour, depuis 1837</h2>
+      <a href="#" class="text-diamonta-pink p-1 text-decoration-none border-bottom border-light">Découvrir</a>
+    </div>
+
+    <div class="col-sm-12 col-md-6">
+      <video autoplay muted loop id="hero-video" width="960" height="540" class="img-fluid">
+        <source src="./assets/media/video/jewelry_store.mp4" type="video/mp4">
+        Votre navigateur ne gère pas la video
+      </video>
+    </div>
+
+  </div>
 </div>
 
 <div class=" d-flex justify-content-evenly align-items-center my-5 py-5">
@@ -71,16 +76,38 @@ require_once 'inc/header.inc.php';
   </div>
 </div>
 
-<div class="container text-center my-5 py-5" id="discover">
+<div class="container-fluid text-center my-5 py-5" id="discover">
   <a href="#" type="button" class="btn btn-outline-diamonta-pink w-auto mb-5">Découvrir</a>
-  <div class="row justify-content-center align-items-center mb-5 gap-5">
-    <img src="<?= BASE_URL; ?>assets/media/img/woman-1.png" class="img-fluid w-50" alt="">
-    <img src="<?= BASE_URL; ?>assets/media/img/collier-1.png" class="img-fluid w-50" alt="">
+  <div class="row d-flex justify-content-center align-items-center mb-5 gap-5">
+    <div class="col-md-5 d-flex flex-column align-items-center gap-5">
+      <img src="<?= BASE_URL; ?>assets/media/img/2stars.svg" class="twoStars img-fluid align-self-start"
+        alt="stars effects">
+      <h3 class="text-capitalize w-50">Avec tout notre amour, depuis 1837</h3>
+      <a href="#"
+        class="text-diamonta-pink p-1 text-decoration-none border-bottom border-light text-center text-uppercase">Plus
+        de modèles</a>
+      <img src="<?= BASE_URL; ?>assets/media/img/stamp.svg" class="w-25 img-fluid" alt="label">
+    </div>
+
+    <div class="col-md-5">
+      <div class="row d-flex gap-3 mb-3">
+        <div class="discover-img bague"></div>
+        <div class="discover-img montre"></div>
+      </div>
+      <div class="row d-flex gap-3">
+        <div class="discover-img homme"></div>
+        <div class="discover-img collier"></div>
+      </div>
+    </div>
+    <!-- <a href="#"
+      class="text-diamonta-pink p-1 mt-5 text-decoration-none border-bottom border-light text-center text-uppercase">Accéder
+      au
+      catalogue des colliers</a> -->
   </div>
-  <a href="#"
-    class="text-diamonta-pink p-1 mt-5 text-decoration-none border-bottom border-light text-center text-uppercase">Accéder
-    au
-    catalogue des colliers</a>
+  <div class="d-flex ms-5">
+    <img src="<?= BASE_URL; ?>assets/media/img/2stars-2.svg" alt="stars effects"
+      class="twoStars img-fluid justify-self-start">
+  </div>
 </div>
 
 <div class="container-fluid my-5 py-5" id="engagement">
@@ -90,7 +117,8 @@ require_once 'inc/header.inc.php';
     </div>
     <div class="col-md-6 d-flex flex-column justify-content-center align-items-center gap-3">
       <h3 class="h3">Sélection fiançailles</h3>
-      <p class="fw-lighter text-center w-75">Les bagues de fiançailles DIAMONTA & Co. qui font la renommée de la Maison
+      <p class="fw-lighter text-center w-75">Les bagues de fiançailles DIAMONTA & Co. qui font la renommée de la
+        Maison
         depuis plus de
         200 ans, associent les plus beaux diamants du monde à un savoir-faire inégalé</p>
       <a href="#"

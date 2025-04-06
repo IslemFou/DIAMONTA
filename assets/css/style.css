@@ -27,11 +27,11 @@ body {
   display: block;
 } */
 
-#hero {
-  /* max-height: 800px !important; */
+/* #hero {
+  max-height: 800px !important;
   overflow: hidden !important;
   min-height: 5rem !important ;
-}
+} */
 
 #hero-video {
   width: 100% !important;
@@ -39,10 +39,10 @@ body {
   object-fit: cover !important;
 }
 
-#hero .position-absolute {
+/* #hero .position-absolute {
   top: 10% !important;
   z-index: 10;
-}
+} */
 
 #rdv:hover {
   color: var(--diamonta-blue);
@@ -170,9 +170,32 @@ main {
   height: 100px !important;
 }
 
-#discover img {
-  height: 600px !important;
+#discover .twoStars {
+  height: 60px !important;
   width: auto !important;
+}
+
+.discover-img {
+  height: 300px !important;
+  width: 300px !important;
+}
+
+.discover-img.bague {
+  background: url("../media/img/bague-w-4.svg") no-repeat center center !important;
+}
+
+.discover-img.montre {
+  background: url("../media/img/montre-w-1.svg") no-repeat center center !important;
+}
+
+.discover-img.homme {
+  background: url("../media/img/man-1.jpg") no-repeat top 20% center !important;
+  background-size: cover !important;
+}
+
+.discover-img.collier {
+  background: url("../media/img/collier-1.png") no-repeat center center !important;
+  background-size: cover !important;
 }
 
 footer {
