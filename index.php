@@ -7,12 +7,12 @@ require_once 'inc/header.inc.php';
 <div class="container mt-5 mb-5">
   <div class="row text-center  d-flex justify-content-center align-items-center" id="hero">
 
-    <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center mb-sm-3">
+    <div class="col-sm-12 col-md-5 d-flex flex-column justify-content-center align-items-center mb-sm-3">
       <h2 class="h2 text-light text-capitalize lh-base">Avec tout notre amour, depuis 1837</h2>
       <a href="#" class="text-diamonta-pink p-1 text-decoration-none border-bottom border-light">Découvrir</a>
     </div>
 
-    <div class="col-sm-12 col-md-6">
+    <div class="col-sm-12 col-md-7">
       <video autoplay muted loop id="hero-video" width="960" height="540" class="img-fluid">
         <source src="./assets/media/video/jewelry_store.mp4" type="video/mp4">
         Votre navigateur ne gère pas la video
@@ -110,10 +110,10 @@ require_once 'inc/header.inc.php';
   </div>
 </div>
 
-<div class="container-fluid my-5 py-5" id="engagement">
+<div class="container my-5 py-5" id="engagement">
   <div class="d-flex justify-content-center align-items-center">
     <div class="col-md-6">
-      <img src="<?= BASE_URL; ?>assets/media/img/fiancailles-1.png" class="img-fluid" alt="">
+      <img src="<?= BASE_URL; ?>assets/media/img/collier-2.svg" class="img-fluid" alt="collier de diamants">
     </div>
     <div class="col-md-6 d-flex flex-column justify-content-center align-items-center gap-3">
       <h3 class="h3">Sélection fiançailles</h3>
@@ -158,9 +158,8 @@ require_once 'inc/header.inc.php';
 </div>
 
 <div class="container-fluid my-5 py-5">
-  <div class="row">
-    <div class="col-md-3 d-flex justify-content-center align-items-center"><img
-        src="<?= BASE_URL; ?>assets/media/img/stars-left.png" class="img-fluid" alt="icône étoiles"></div>
+  <div class="row justify-content-center">
+    <div class="col-md-3 d-flex align-self-start d-none d-xxl-flex" id="stars-left"></div>
     <div class="col-md-6">
       <h4 class="h4 text-center">Newsletter</h4>
       <p class="fw-lighter text-center">Inscrivez-vous à la newsletter et découvrez l'univers enchanteur de la Maison,
@@ -173,18 +172,17 @@ require_once 'inc/header.inc.php';
             <input type="email" class=" col-sm-10 form-control-sm w-50" id="email" placeholder="nom@example.fr">
 
           </div>
-          <button type="submit" class="btn btn-outline-diamonta-pink col-sm-2 align-self-center">S'abonner</button>
+          <button type="submit" class="btn btn-outline-diamonta-pink col-sm-3 align-self-center">S'abonner</button>
         </div>
       </form>
     </div>
-    <div class="col-md-3 d-flex justify-content-center align-items-center"><img
-        src="<?= BASE_URL; ?>assets/media/img/stars-right.png" class="img-fluid" alt="icône étoiles"></div>
+    <div class="col-md-3 d-flex align-self-end d-none d-xxl-flex" id="stars-right"></div>
   </div>
 </div>
 
-<div class="container my-5 py-5">
+<div class="container mt-5 py-5">
   <hr class="my-5 text-btn-diamonta-pink">
-  <h4 class="h4 text-center text-uppercase">Diamonta & Co.</h4>
+  <h4 class="h4 text-center text-uppercase">Diamonta</h4>
 </div>
 
 
