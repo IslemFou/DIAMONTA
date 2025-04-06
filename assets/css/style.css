@@ -294,7 +294,7 @@ div.size > p:hover {
   border-radius: 0 !important;
 }
 
-#accordionDiamonta.bi-plus {
+.accordion-button i.bi-plus {
   color: white !important;
   font-size: 2rem !important;
   left: 99% !important;
