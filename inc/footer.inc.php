@@ -1,7 +1,7 @@
 <?php require_once 'functions/functions.php'; ?>
 <?php ob_end_flush(); // Send the contents of the output buffer and turn off output buffering. It's typically used to ensure that all output is sent to the browser immediately, rather than being buffered by PHP. This can be useful in certain situations, such as when you need to send a response to the browser before the script has finished executing. ?>
 </main>
-<footer class="d-flex justify-content-around align-items-start text-white mt-5">
+<footer class="d-flex justify-content-around align-items-start text-white">
   <div class="d-flex flex-column justify-content-start align-items-center gap-2">
     <h5 class="text-uppercase text-diamonta-pink">Service client</h5>
     <a href="#" class="px-2 link-light text-decoration-none">Personnalisation</a>

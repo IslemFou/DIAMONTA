@@ -2,6 +2,7 @@
   --diamonta-blue: #10051f;
   --diamonta-pink: #e7a4a4;
   --diamonta-purple: rgba(231, 164, 164, 0.22);
+  --diamonta-light-blue: #e0e3f2;
   --bs-accordion-btn-color: #e7a4a4 !important;
 }
 
@@ -97,6 +98,10 @@ body {
 
 .bg-diamonta-blue {
   background-color: var(--diamonta-blue) !important;
+}
+
+.bg-diamonta-light-blue {
+  background-color: var(--diamonta-light-blue) !important;
 }
 
 .text-diamonta-pink {
@@ -215,6 +220,7 @@ main {
 }
 
 footer {
+  margin-top: 8rem !important;
   height: 500px !important;
   background: url("../media/img/footer-diamonds.png") no-repeat top center !important;
   background-size: cover !important;
@@ -258,6 +264,15 @@ footer {
   background-color: var(--diamonta-purple) !important;
 }
 
+#product-container,
+#panier-container {
+  border: 5px solid transparent !important;
+  border-image: url("../media/img/decoration.svg") !important;
+  border-image-outset: 10 !important;
+  border-image-slice: 0 fill !important;
+  /* border-image-repeat: round !important; */
+}
+
 div.rock:hover {
   border: 1px solid var(--diamonta-pink) !important;
 }
@@ -266,7 +281,7 @@ div.size > p:hover {
   background-color: var(--diamonta-pink) !important;
 }
 
-#addToCartBtn {
+.addToCartBtn {
   border-top-right-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 0 !important;
@@ -279,7 +294,7 @@ div.size > p:hover {
   border-radius: 0 !important;
 }
 
-.bi-plus {
+#accordionDiamonta.bi-plus {
   color: white !important;
   font-size: 2rem !important;
   left: 99% !important;
@@ -323,4 +338,9 @@ div.size > p:hover {
 
 .carousel-control-next {
   right: -5% !important;
+}
+
+#cost {
+  height: 400px !important;
+  margin-top: 8rem !important;
 }

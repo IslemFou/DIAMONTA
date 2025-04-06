@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <main data-bs-theme="dark">
+  <main class="mb-5" data-bs-theme="dark">
     <nav class="py-3 border-bottom border-diamonta-pink">
       <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
         <button class="navbar-toggler px-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDiamonta"
